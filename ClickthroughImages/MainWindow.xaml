@@ -1,0 +1,19 @@
+﻿<Window x:Class="ClickthroughImages.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Loaded="Window_Loaded" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="305" d:DesignWidth="527" SizeToContent="Manual" Icon="/ClickthroughImages;component/arrow.png" KeyUp="Window_KeyUp" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="346*" />
+            <ColumnDefinition Width="155*" />
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Stretch" Margin="12,12,12,68" Name="imgCenterImage" Stretch="Fill" VerticalAlignment="Stretch" Grid.ColumnSpan="2" />
+        <Button Content="&lt;-- Vorheriges" Height="23" HorizontalAlignment="Left" Margin="12,0,0,36" Name="buttonVorherigesBild" VerticalAlignment="Bottom" Width="90" Click="buttonVorherigesBild_Click" />
+        <Button Content="Speichern" Height="23" HorizontalAlignment="Center" Margin="210,0,0,36" Name="buttonSpeichern" VerticalAlignment="Bottom" Width="75" Click="buttonSpeichern_Click" />
+        <Button Content="Nächstes --&gt;" Height="23" HorizontalAlignment="Right" Margin="0,0,7,36" Name="buttonNaechstesBild" VerticalAlignment="Bottom" Width="86" Click="buttonNaechstesBild_Click" Grid.Column="1" />
+        <Label Height="28" HorizontalAlignment="Stretch" Margin="4,0,3,4" Name="labelStatus" VerticalAlignment="Bottom" HorizontalContentAlignment="Stretch" Grid.ColumnSpan="2" />
+        <Button Height="23" Margin="104,0,0,36" Name="buttonRotate90"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="buttonRotate90_Click">
+            <Image Source="/ClickthroughImages;component/arrow.png" />
+        </Button>
+    </Grid>
+</Window>
